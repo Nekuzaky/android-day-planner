@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DayBoard</string>
+    <string name="info">About</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="copied">Copied</string>
+    <string name="copy_failed">Could not copy</string>
+    <string name="limit_reached">Limit reached. Delete something first.</string>
+    <string name="item_missing">This item no longer exists</string>
+    <string name="title_required">Enter a title</string>
+    <string name="settings_failed">Could not open settings</string>
+    <string name="picker_failed">No file picker is available</string>
+    <string name="info_message">DayBoard is a private daily planner. It has no internet access, no accounts, no ads and no analytics. Your data stays in private app storage until you export it yourself.\n\nDue times are wall-clock times: a task due at 09:00 stays at 09:00 after a daylight saving change or when you travel to another time zone. A time skipped by a clock change fires right after the gap, and a repeated hour fires only once.\n\nExact reminders need the alarms permission. Without it, reminders are approximate and Android may delay them.</string>
+
+    <string name="tab_today">Today</string>
+    <string name="tab_habits">Habits</string>
+    <string name="tab_stream">Stream</string>
+    <string name="tab_backup">Backup</string>
+
+    <string name="quick_hint">Quick add a task for today</string>
+    <string name="quick_add">Add</string>
+    <string name="add_details">Add with details</string>
+    <string name="today_status">%1$s · %2$d overdue · %3$d today</string>
+    <string name="today_empty">No tasks yet. Add one above.</string>
+    <string name="section_overdue">OVERDUE</string>
+    <string name="section_today">TODAY</string>
+    <string name="section_upcoming">UPCOMING</string>
+    <string name="section_done">DONE</string>
+    <string name="overdue_tag">Overdue</string>
+    <string name="task_check">Mark %1$s as done or not done</string>
+    <string name="clear_done">Delete done tasks (%1$d)</string>
+    <string name="clear_done_title">Delete done tasks?</string>
+    <string name="clear_done_message">All completed one-time tasks will be deleted. Repeating tasks stay. This cannot be undone.</string>
+
+    <string name="habit_hint">New habit</string>
+    <string name="habit_add">Add</string>
+    <string name="habit_check_in">Check in</string>
+    <string name="habit_checked">Done today</string>
+    <string name="habit_meta">Current streak %1$d · Best %2$d</string>
+    <plurals name="habits_status">
+        <item quantity="one">%1$d habit</item>
+        <item quantity="other">%1$d habits</item>
+    </plurals>
+    <string name="habits_empty">No habits yet. Add one above.</string>
+
+    <string name="slot_add">Add slot</string>
+    <string name="copy_schedule">Copy for Discord</string>
+    <string name="stream_status">Times computed in %1$s</string>
+    <string name="stream_empty">No stream slots yet. Add a weekly slot, then copy the schedule for Discord.</string>
+    <string name="section_discord">DISCORD TEXT</string>
+    <string name="discord_too_long">This text has %1$d characters. Discord allows %2$d in one message, so paste it in two parts or remove slots.</string>
+
+    <string name="export_button">Export backup</string>
+    <string name="import_button">Import backup</string>
+    <string name="backup_status">%1$d tasks · %2$d habits · %3$d slots</string>
+    <string name="section_reminders">REMINDERS</string>
+    <string name="section_backup">BACKUP</string>
+    <string name="backup_note">Export writes all your data to a JSON file you choose. The file is not encrypted, so keep it somewhere private. Import checks the whole file first and asks before replacing anything.</string>
+    <string name="state_exact_on">Exact reminders: on. Reminders fire at the due time.</string>
+    <string name="state_exact_off">Exact reminders: off. Reminders are approximate and Android may delay them.</string>
+    <string name="state_notifications_on">Notifications: allowed.</string>
+    <string name="state_notifications_off">Notifications: refused. Reminders are saved, but no alert will appear.</string>
+    <string name="export_done">Backup saved</string>
+    <string name="export_failed">Could not save the file</string>
+    <string name="import_title">Replace all data?</string>
+    <string name="import_message">This backup has %1$d tasks, %2$d habits and %3$d stream slots. All current data will be replaced. This cannot be undone, so export first if you are unsure.</string>
+    <string name="import_confirm">Replace</string>
+    <string name="import_failed">Import refused</string>
+    <string name="import_failed_message">Nothing was changed. Reason: %1$s</string>
+    <string name="import_too_large">the file is larger than the 8 MB limit</string>
+    <string name="import_not_text">the file is not UTF-8 text</string>
+    <string name="import_unreadable">the file could not be read</string>
+
+    <string name="notice_blocked">Your data file could not be read. Nothing will be saved until the app restarts, so your file stays untouched.</string>
+    <string name="notice_save_failed">Your last change could not be saved. It is kept in memory only. Tap to retry.</string>
+    <string name="notice_corrupt">Your data file was damaged and has been kept aside. DayBoard started empty. Tap for options, or import a backup.</string>
+    <string name="notice_notifications">Notifications are refused. Reminders are saved, but no alert will appear. Tap to open settings.</string>
+    <string name="notice_exact">Exact alarms are not allowed, so reminders are approximate and Android may delay them. Tap to allow exact alarms.</string>
+    <string name="corrupt_title">Damaged data file</string>
+    <string name="corrupt_message">The damaged file was kept as %1$s. You can save a copy of it to inspect it, or delete it.</string>
+    <string name="corrupt_save">Save a copy</string>
+    <string name="corrupt_delete">Delete it</string>
+    <string name="corrupt_delete_title">Delete the damaged file?</string>
+    <string name="corrupt_delete_message">The kept file will be removed for good. This cannot be undone.</string>
+
+    <string name="channel_reminders">Task reminders</string>
+    <string name="notification_due">Due at %1$s</string>
+
+    <string name="editor_task">Task</string>
+    <string name="editor_habit">Habit</string>
+    <string name="editor_slot">Stream slot</string>
+    <string name="editor_title_hint">Title</string>
+    <string name="editor_name_hint">Name</string>
+    <string name="editor_date">Date: %1$s</string>
+    <string name="editor_time">Due time: %1$s</string>
+    <string name="editor_time_none">Set a due time (optional)</string>
+    <string name="editor_clear_time">Remove due time</string>
+    <string name="editor_start">Start: %1$s</string>
+    <string name="editor_end">End: %1$s</string>
+    <string name="editor_remind">Remind me at the due time</string>
+    <string name="editor_repeat">Repeat</string>
+    <string name="editor_day">Day of the week</string>
+    <string name="editor_slot_note">An end time earlier than the start time means the slot ends the next day.</string>
+    <string name="reminder_needs_time">Set a due time to enable a reminder.</string>
+    <string name="reminder_off">No reminder for this task.</string>
+    <string name="reminder_exact">A notification will appear at the due time.</string>
+    <string name="fix_notifications">Open notification settings</string>
+    <string name="fix_exact">Allow exact alarms</string>
+    <string name="repeat_monthly_note">Monthly on day %1$d. Shorter months use their last day.</string>
+    <string name="repeat_weekly_note">Choose at least one day. The task moves to the next chosen day.</string>
+    <string name="repeat_needs_day">Choose at least one day</string>
+    <string name="date_out_of_range">That date is out of range</string>
+    <string name="slot_same_times">Start and end must be different</string>
+    <string name="delete_task_title">Delete this task?</string>
+    <string name="delete_task_message">The task and its reminder will be removed. This cannot be undone.</string>
+    <string name="delete_habit_title">Delete this habit?</string>
+    <string name="delete_habit_message">The habit and all its check-ins will be removed. This cannot be undone.</string>
+    <string name="delete_slot_title">Delete this slot?</string>
+    <string name="delete_slot_message">The slot will be removed from the schedule. This cannot be undone.</string>
+
+    <string-array name="repeat_kinds">
+        <item>Does not repeat</item>
+        <item>Daily</item>
+        <item>Weekdays</item>
+        <item>Weekly on chosen days</item>
+        <item>Monthly</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>

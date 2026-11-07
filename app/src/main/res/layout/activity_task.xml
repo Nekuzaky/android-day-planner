@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:filterTouchesWhenObscured="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                style="@style/IconButton"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@string/back"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                style="@style/ScreenTitle"
+                android:text="@string/editor_task" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/titleInput"
+            style="@style/TextField"
+            android:importantForAutofill="no"
+            android:layout_marginTop="12dp"
+            android:hint="@string/editor_title_hint"
+            android:inputType="textCapSentences"
+            android:maxLength="200" />
+
+        <Button
+            android:id="@+id/dateButton"
+            style="@style/SecondaryButton"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/timeButton"
+            style="@style/SecondaryButton"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/clearTime"
+            style="@style/SecondaryButton"
+            android:layout_marginTop="8dp"
+            android:text="@string/editor_clear_time"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/remindSwitch"
+                android:text="@string/editor_remind"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/remindSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/editor_remind"
+                android:filterTouchesWhenObscured="true"
+                android:thumbTint="@color/switch_thumb"
+                android:trackTint="@color/switch_track" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reminderNote"
+            style="@style/EditorNote" />
+
+        <Button
+            android:id="@+id/fixNotifications"
+            style="@style/SecondaryButton"
+            android:layout_marginTop="8dp"
+            android:text="@string/fix_notifications"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/fixExact"
+            style="@style/SecondaryButton"
+            android:layout_marginTop="8dp"
+            android:text="@string/fix_exact"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/EditorNote"
+            android:layout_marginTop="14dp"
+            android:text="@string/editor_repeat" />
+
+        <Spinner
+            android:id="@+id/repeatSpinner"
+            style="@style/EditorSpinner"
+            android:contentDescription="@string/editor_repeat" />
+
+        <LinearLayout
+            android:id="@+id/dayRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/dayMon"
+                style="@style/TabButton"
+                android:layout_marginEnd="3dp" />
+
+            <Button
+                android:id="@+id/dayTue"
+                style="@style/TabButton"
+                android:layout_marginEnd="3dp" />
+
+            <Button
+                android:id="@+id/dayWed"
+                style="@style/TabButton"
+                android:layout_marginEnd="3dp" />
+
+            <Button
+                android:id="@+id/dayThu"
+                style="@style/TabButton"
+                android:layout_marginEnd="3dp" />
+
+            <Button
+                android:id="@+id/dayFri"
+                style="@style/TabButton"
+                android:layout_marginEnd="3dp" />
+
+            <Button
+                android:id="@+id/daySat"
+                style="@style/TabButton"
+                android:layout_marginEnd="3dp" />
+
+            <Button
+                android:id="@+id/daySun"
+                style="@style/TabButton" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/repeatNote"
+            style="@style/EditorNote"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/saveButton"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="16dp"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            style="@style/SecondaryButton"
+            android:layout_marginTop="8dp"
+            android:text="@string/delete"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
